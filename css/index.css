@@ -1,0 +1,173 @@
+
+*{
+    list-style: none;
+    box-sizing: border-box; /*让内边距无法改变盒模型的长宽*/
+    text-decoration: none; /*去除超链接的下划线*/
+}
+<-移动优先规划--->
+.main-header {
+    text-align: center;
+    background-color: aqua;
+    
+}
+body {
+  
+    background-image: url(../img/xk.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.logo {
+    margin: 0;  /*重置logo的外边距*/
+}
+
+.logo a:hover {
+    text-shadow: 1px 1px 1px red;
+    transition: .3s;
+}
+
+.logo a {
+    padding: .5em 0;  /*改变logo的上下内边距*/
+}
+
+.navlist li a {
+    padding: 1em 1;   /*改变导航条超链接的上下内边距*/
+}
+   
+.navlist li a {
+    
+    padding: 1em 0;/*改变导航条超链接的上下内边距*/
+    padding-right: 10%;
+    padding-left: 10%;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 1em 0;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: wheat;
+    text-shadow: 3px 3px 3px black;
+
+}
+.navlist li a:hover {
+    background-color:#3b3b56;
+    transition: .3s;
+    text-shadow: 1px 1px 1px black;
+}
+a{
+    display: block;
+    color: dimgrey;
+    
+}
+
+
+  footer {
+    text-align: center;
+    padding: 1em 0;
+   
+    color: aquamarine;
+}
+  
+
+/* ================================= 
+媒体查询:700px宽
+==================================== */
+@media (min-width:700px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navlist {
+        display: flex;
+        align-items: stretch;
+    
+
+    }
+    
+    .navlist li a {
+        padding: 2em 2em;
+        
+    }
+    
+    .banner {
+        height: 1000px;
+    }
+    
+    .container{
+        padding: 1em 0;
+        width:100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .col{
+        flex-basis: 20%;
+        flex-grow: 1;
+        margin: 0 1em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0);
+        
+    }
+    .col p{
+        margin: auto;
+        color: white;
+    }
+    .col:hover {
+        box-shadow: 3px 3px rgba(0,0,0,.8);
+        transition: .1s;
+        cursor: default;
+        border: 1px solid black;
+        
+    }
+    .col h1{
+        padding: 0 .5em;
+    }
+    
+    
+}
+.banner{
+    
+    
+    height: 500px;
+    
+}
+
+/*
+h3{
+    font-size: 6em;
+    color: aqua;
+}
+*/
+
+    
+h1,h2{
+    margin: 0;
+} 
+p{
+    margin: 0;
+    padding: 1em;
+    
+}
+ul{
+    
+   margin: 0;
+    color: aquamarine;
+}
+h3{
+   text-align: center; 
+}
+h1{
+    color: 
+}
+
+
+.shige{
+    color: aqua;
+}
